@@ -5,18 +5,6 @@
   src: local('Lato Light'), local('Lato-Light'), url(https://themes.googleusercontent.com/static/fonts/lato/v6/kcf5uOXucLcbFOydGU24WALUuEpTyoUstqEm5AMlJo4.woff) format('woff');
 }
 
-@-webkit-keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
-@keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
 /* ==============
  * Base
  * ==============
@@ -38,6 +26,11 @@ h4, .h4 {
 
 h1, .h1 {
   text-transform: uppercase;
+}
+
+p, .p {
+    font-family: Lato;
+    font-size: 125%;
 }
 
 hr {
@@ -101,16 +94,7 @@ th {
 .has-error .checkbox-inline {
   color: #F98482;
 }
-/*
-.nav-tabs {
- border-bottom-color: #444;
-  margin-bottom: 20px;
-  margin-left: -20px;
-  margin-right: -20px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-*/
+
 .nav-tabs > li > a {
   color: #aaa;
   line-height: 1.1;
@@ -134,16 +118,7 @@ th {
 .table > tfoot > tr > td {
   border-top-color: rgba(255, 255, 255, 0.3);
 }
-/*
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus {
-  background-color: transparent;
-  border-color: #444;
-  border-bottom-color: #222224;
-  color: #FFF;
-}
-*/
+
 .list-inline > li {
   margin-right: 10px;
 }
@@ -156,6 +131,7 @@ th {
  * Helpers
  * ==============
  */
+
 .fullscreen {
   position: absolute;
   top: 0;
@@ -213,31 +189,6 @@ th {
   color: #3C729D;
 }
 
-.system-caret {
-  /* Force a new stacking context to prevent this animation from making the page
-   * flicker in Chrome 31.
-   */
-  -webkit-transform: translatez(0);
-  -moz-transform: translatez(0);
-  -ms-transform: translatez(0);
-  -o-transform: translatez(0);
-  transform: translatez(0);
-
-  -webkit-animation-duration: 1.2s;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-name: blink;
-  -webkit-animation-timing-function: steps(1, start);
-
-  animation-duration: 1.2s;
-  animation-iteration-count: infinite;
-  animation-name: blink;
-  animation-timing-function: steps(1, start);
-
-  width: 0.7em;
-  display:inline-block;
-  border-bottom: 1px solid #fff;
-}
-
 textarea {
   resize: vertical;
 }
@@ -252,6 +203,7 @@ textarea {
  * Textures
  * ==============
 */
+
 .texture-background {
   background: -webkit-linear-gradient(rgba(28,54,69,0.8) 0%, rgba(0,0,0,0) 100%);
   background: linear-gradient(rgba(28,54,69,0.8) 0%, rgba(0,0,0,0) 100%);
