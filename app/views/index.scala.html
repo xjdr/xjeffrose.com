@@ -1,0 +1,49 @@
+@(message: String)
+
+@main("xjeffrose.com") {
+
+  <!-- Header -->
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>
+          <span class="system-folder">Jeff Rose</span>
+        </h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bread Crumbs -->
+  <div class="container">
+    <h4>
+      <ol class="breadcrumb">
+        <li class="active">Home</li>
+        <li><a href="@routes.Application.projects">Projects</a></li>
+        <li><a href="@routes.Application.opinions">Opinions</a></li>
+        <li><a href="@routes.Application.reference">Reference</a></li>
+      </ol>
+    </h4>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-8">
+        <div id="avatar">
+          <img align="left" src="@routes.Assets.at("img/hobbes.gif")"/>
+        </div>
+
+        <h3 class="page-header">Hi, my name is Jeff</h3>
+        <p>
+          I am a Systems Developer and an Engineer. I write code and design distributed systems.
+          Hopefully something I've written or designed has (or will) be of some use to you.
+        </p>
+
+        <p>
+          You can find me on twitter <a href'https://twitter.com/xjeffrose'>&#36xjeffrose</a> or on <a href="https://github.com/xjdr">Github</a>.
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+}

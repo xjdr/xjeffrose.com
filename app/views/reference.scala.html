@@ -1,0 +1,28 @@
+@(message: String)
+
+@main("xjeffrose.com") {
+
+  <!-- Header -->
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>
+          <span class="system-folder">Jeff Rose</span>
+        </h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bread Crumbs -->
+  <div class="container">
+    <h4>
+      <ol class="breadcrumb">
+        <li><a href="@routes.Application.index">Home</a></li>
+        <li><a href="@routes.Application.projects">Projects</a></li>
+        <li><a href="@routes.Application.opinions">Opinions</a></li>
+        <li class="active">Reference</li>
+      </ol>
+    </h4>
+  </div>
+
+}

@@ -1,0 +1,19 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>@title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="@routes.Assets.at("css/jr.css")">
+    </head>
+
+  @content
+
+    <body>
+        <script src="@routes.Assets.at("js/jquery.js")"></script>
+        <script src="@routes.Assets.at("js/jr.js")"></script>
+    </body>
+</html>
